@@ -1,2 +1,39 @@
 *
 {font-family: raleway;}
+
+body
+{display: flex;
+flex-direction: column;}
+
+#page
+{display: flex;
+flex-direction: column;}
+
+header
+{display: flex;}
+
+#hebergement
+{display:flex;
+justify-content: flex-start;
+flex: 1 1 auto;
+flex-direction: row; }
+
+#pop
+{display: flex;
+justify-content: flex-end;}
+
+#filtres
+{display: flex;}
+
+#activite
+{display: flex;}
+    .grande
+    {display: flex;}
+    .petite
+    {display: flex;}
+
+footer
+{display: flex;
+align-items: flex-end;
+justify-content: space-between;}
+
