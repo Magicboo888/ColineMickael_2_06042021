@@ -1,36 +1,60 @@
 *
-{font-family: raleway;}
+{font-family: raleway;
+}
 
 body
 {display: flex;
-flex-direction: column;}
+} 
 
 #page
 {display: flex;
-flex-direction: column;}
+}
 
 header
-{display: flex;}
+{display: flex;
+}
+    .logo
+    {display: flex;
+    width: 50px;
+    height: 50px;}
+    .nav
+    {display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;}
 
 #hebergement
-{display:flex;
-justify-content: flex-start;
-flex: 1 1 auto;
-flex-direction: row; }
+{   display: flex;
+    background-color: #f2f2f2;
+    justify-content: space-between;
+}
 
-#pop
+.imghebergement
+{   display:flex;
+    width: 100px;
+    height: 100px;
+}
+
+.pop
 {display: flex;
-justify-content: flex-end;}
+justify-content: flex-end;
+flex-direction: column;
+background-color: #f2f2f2;}
 
 #filtres
-{display: flex;}
+{display: flex;
+}
 
 #activite
-{display: flex;}
+{display: flex;
+}
     .grande
-    {display: flex;}
+    {display: flex;
+    width: 100px;
+    height: 100px;}
     .petite
-    {display: flex;}
+    {display: flex;
+    width: 100px;
+    height: 50px;}
 
 footer
 {display: flex;
