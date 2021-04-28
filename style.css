@@ -6,7 +6,7 @@ body
 {display: flex;
 } 
 
-#page
+main
 {display: flex;
 }
 
@@ -24,18 +24,18 @@ header
 
 #hebergement
 {   display: flex;
-    background-color: #f2f2f2;
     justify-content: space-between;
 }
 
-.imghebergement
-{   display:flex;
-    width: 100px;
-    height: 100px;
+.hebergement
+{display:flex;
+background-color: #f2f2f2;
+width: 70%;
 }
 
 .pop
 {display: flex;
+width: 30%;
 justify-content: flex-end;
 flex-direction: column;
 background-color: #f2f2f2;}
@@ -49,12 +49,9 @@ background-color: #f2f2f2;}
 }
     .grande
     {display: flex;
-    width: 100px;
-    height: 100px;}
+    }
     .petite
-    {display: flex;
-    width: 100px;
-    height: 50px;}
+    {display: flex;}
 
 footer
 {display: flex;
