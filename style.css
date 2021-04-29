@@ -3,58 +3,77 @@
 }
 
 body
-{display: flex;
+{box-sizing: border-box;
+margin:0;
 } 
 
 main
-{display: flex;
+{margin: 0 50px 50px;
+box-sizing: border-box ;
 }
+
+a
+{text-decoration: none;
+color: inherit;}
 
 header
 {display: flex;
+justify-content: space-between;
+margin:0 0 35px 35px; 
 }
     .logo
     {display: flex;
-    width: 50px;
-    height: 50px;}
-    .nav
+    margin-top: 35px;
+    flex:1;
+    }
+    .headernav
     {display: flex;
-    justify-content: flex-end;
-    justify-content: space-between;}
+    padding: 40px 30px 0;}
 
-#hebergement
-{   display: flex;
-    justify-content: space-between;
-}
+.filtres
+{}
+        .trouver
+        {font-weight: bold;}
 
-.hebergement
-{display:flex;
+.logement
+{ box-sizing: border-box;
 background-color: #f2f2f2;
-width: 70%;
 }
+    .hbgmarseille
+    {font-weight: bold;}
+    .etoilebleu
+    {
+    color: #0065fc;}
+    .etoilegrise
+    {color: #f2f2f2;}
+
 
 .pop
-{display: flex;
-width: 30%;
-justify-content: flex-end;
-flex-direction: column;
-background-color: #f2f2f2;}
-
-#filtres
-{display: flex;
+{box-sizing: border-box;
+background-color: #f2f2f2;
 }
-
-#activite
-{display: flex;
-}
+    .lespluspop
+    {display: flex;
+    font-weight: bold}
+   
+.acmarseille
+{font-weight: bold;}  
     .grande
     {display: flex;
     }
     .petite
-    {display: flex;}
+    {display: flex;
+    }
 
-footer
-{display: flex;
-align-items: flex-end;
-justify-content: space-between;}
-
+.footercolonne
+{display: block;
+padding: 40px 50px 50px;
+background-color: #f2f2f2;
+flex:1
+}
+    .footertitre
+    {display: flex;
+    font-weight: bold;
+    }
+    .footertext
+    {display: block;}
