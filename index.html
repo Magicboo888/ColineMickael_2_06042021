@@ -10,40 +10,55 @@
 <body>
             <!--reservia et navigation-->
         <header>
-            <div class="logo"><img src="images/logo/reservia.png" alt="logo reservia"></div>
-            <nav>
-            <a class="headernav" href="#hebergement">Hébergements</a> 
-            <a class="headernav" href="#activite">Activités</a> 
-            <a class="headernav" href="#"> S'inscrire</a>    
+            <img class="logo" src="images/logo/reservia.png" alt="logo reservia">
+            <nav class="nav">
+            <a href="#hebergement">Hébergements</a> 
+            <a href="#activite">Activités</a> 
+            <a href="#" class="sinscrire">S'inscrire</a>    
             </nav>
         </header>
 
     <main>
-            <!--filtres-->
+            <!--barre de recherche-->
         <section class="filtres">
-            <div class="trouver"> Trouver votre hébergement pour des vacances de rêve</div>
-            <div class=enplein>En plein centre ville ou en pleine nature</div>
-            <i class="fas fa-map-marker-alt"></i><!--barre de recherche-->
-            <i class="fas fa-dog"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-money-bill-wave"></i>
-            <i class="fas fa-child"></i>
-            <ul>
-                <li> Économique</li>
-                <li> Familial</li>
-                <li> Romantique</li>
-                <li> Animaux autorisés</li>
-            </ul>
-            <i class="fas fa-info-circle"></i> 
-            <div class="500">Plus de 500 logements sont disponibles dans cette ville</div>
+            <div class="trouver">Trouver votre hébergement pour des vacances de rêve</div>
+            <div class="enplein">En plein centre ville ou en pleine nature</div>
+            <div class="recherche">
+                <div class="icone">
+                <i class="fas fa-map-marker-alt"></i>
+                </div>    
+                <input type="search" class="champ" placeholder="Marseille, France">
+                <input class="bouton" type="button" value="Rechercher">
+            </div>  
+            <!--filtres-->
+            <div class="filtres2">Filtres</div>
+                <div class="economique">
+                    <div class="icone2">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <input class="bouton2" type="button" value="Économique">   
+                </div>
+                <div class="familial">
+                    <div class="icone2">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <input class="bouton2" type="button" value="Familial">
+                </div>    
+                    <i class="fas fa-heart liens">Romantique</i>
+                <i class="fas fa-dog liens">Animaux autorisés</i>
+            </div>
+            <div class="info"> 
+                <i class="fas fa-info-circle">Plus de 500 logements sont disponibles dans cette ville</i> 
+            </div>
         </section>
             <!--hébergements-->
         <section class="logement">
             <aside class="hebergement"> 
                 <div class=hbgmarseille>Hébergements à Marseille</div>
+                <div class="blocimg">
                 <a href="#">
                     <img class="imghebergement" src="images/hebergements/4_small/cannebiere.jpg" alt="Auberge la Cannebière">
-                    <span class="texthebergement">Auberge La Cannebière Nuit à partir de <strong>25€</strong></span>
+                    <div class="texthebergement">Auberge La Cannebière Nuit à partir de <strong>25€</strong></div>
                     <div class="etoile">
                     <i class="fas fa-star etoilebleu"></i>
                     <i class="fas fa-star etoilebleu"></i>
@@ -52,6 +67,7 @@
                     <i class="fas fa-star etoilegrise"></i>
                     </div>
                 </a>
+                </div>
                 <a href="#">     
                     <img class="imghebergement" src="images/hebergements/4_small/port.jpg" alt="Hôtel du port">
                     <div class="texthebergement">Hôtel du port Nuit à partir de <strong>52€</strong></div>
@@ -178,11 +194,11 @@
     </main>
 
         <footer>
-            <div class=footercolonne>
+            <div class="footercolonne">    
                 <div class="footertitre">A propos</div>
-                <a class="footertext" href="#">Fonctiononnement du site</a> 
-                <a class="footertext" href="#">Conditions générales de vente</a>
-                <a class="footertext" href="#">Données et confidentialités</a>
+                    <a class="footertext" href="#">Fonctiononnement du site</a> 
+                    <a class="footertext" href="#">Conditions générales de vente</a>
+                    <a class="footertext" href="#">Données et confidentialités</a>    
             </div>
             <div class="footercolonne">
                 <div class="footertitre">Nos hébérgements</div>

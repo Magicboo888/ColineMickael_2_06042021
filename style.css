@@ -1,15 +1,18 @@
 *
 {font-family: raleway;
+    
 }
 
 body
 {box-sizing: border-box;
-margin:0;
+    margin: auto;
 } 
 
 main
-{margin: 0 50px 50px;
+{max-width: 1500px;
 box-sizing: border-box ;
+padding: 0 2rem;
+margin: auto;
 }
 
 a
@@ -17,63 +20,174 @@ a
 color: inherit;}
 
 header
-{display: flex;
+{box-sizing: border-box;
+max-width: 1500px;
+display: flex;
 justify-content: space-between;
-margin:0 0 35px 35px; 
-}
+margin: auto;}
+
     .logo
-    {display: flex;
-    margin-top: 35px;
-    flex:1;
+    {padding: 3rem;
+    height: 4rem;
     }
-    .headernav
-    {display: flex;
-    padding: 40px 30px 0;}
+    .nav
+    {
+    display: flex;
+    padding: 2rem;
+    font-weight: 600;
+    align-items: center;
+    }
+   .sinscrire
+   {color: #0065fc;
+    }
+
+    nav a
+    {display:flex;
+    padding: 2rem;
+    }
+
+    nav a:hover
+    {color: #0065fc;
+    border-top: 2px solid#0065fc;
+    padding-top: 40px;}
 
 .filtres
-{}
-        .trouver
-        {font-weight: bold;}
+{margin-bottom: 3rem;}
+        .recherche
+        {display: flex;
+        margin-bottom: 2rem;
+        height: 3rem;}
+            .trouver
+            {font-weight: 900;
+            margin-bottom: 1rem;}
+            .enplein
+            {margin-bottom: 1rem;}
+            .icone
+            {display: flex;
+            background-color: #f2f2f2;
+            border-radius: 1rem 0 0 1rem;
+            width: 3rem;
+            }
+            .icone i
+            {margin: auto;}
+            .champ
+            {width: 12rem ;
+            padding: 1rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border: 1px solid #f2f2f2}
+            .bouton
+            {width: 7rem;
+            background-color: #0065fc;
+            border: none;
+            border-radius: 0 1rem 1rem 0;
+            color: #fff;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            }
+            
+.filtres2
+{
+display: flex;
+font-weight: 600;
+font-size: 1rem; 
+}
+    .economique, .familial
+    {
+    display: flex;
+    margin-bottom: 2rem;
+    height: 3rem;
+    }
+    .icone2
+    {
+    display: flex;
+    background-color: #f2f2f2;
+    border-radius: 1rem 0 0 1rem;
+    width: 3rem;
+    }
+    .bouton2
+    {
+    width: 7rem;
+    background-color: #0065fc;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    }
+    
 
 .logement
 { box-sizing: border-box;
-background-color: #f2f2f2;
-}
-    .hbgmarseille
-    {font-weight: bold;}
-    .etoilebleu
-    {
-    color: #0065fc;}
-    .etoilegrise
-    {color: #f2f2f2;}
 
-
-.pop
-{box-sizing: border-box;
-background-color: #f2f2f2;
 }
-    .lespluspop
-    {display: flex;
-    font-weight: bold}
+    .hebergement
+    {box-sizing: border-box;
+    
+    border-radius: 1rem;
+    background-color: #f2f2f2;
+    width: 70%;}
+        .hbgmarseille
+        {font-weight: bold;}
+        .etoilebleu
+        {
+        color: #0065fc;}
+        .etoilegrise
+        {color: #f2f2f2;}
+        .blocimg
+        {margin: 2rem;
+        padding: auto;
+        }
+        
+
+    .pop
+    {box-sizing: border-box;
+    border-radius: 1rem;
+    background-color: #f2f2f2;
+    width: 30%;
+    }
+        .lespluspop
+        {
+        display: flex;
+        font-weight: bold
+        }
    
 .acmarseille
-{font-weight: bold;}  
+{
+font-weight: bold;
+margin: 2rem 2rem;
+}  
     .grande
-    {display: flex;
+    {
+    display: flex;
     }
     .petite
-    {display: flex;
+    {
+    display: flex;
     }
 
-.footercolonne
-{display: block;
-padding: 40px 50px 50px;
+footer
+{
+display: flex;
+padding: 2rem;
 background-color: #f2f2f2;
-flex:1
+justify-content: space-around;
 }
+    footer a:hover
+    {
+    font-weight: 800;
+    color: #0065f5
+    }
     .footertitre
-    {display: flex;
-    font-weight: bold;
+    {
+    font-weight: 700;
+    padding: 0.5rem;
     }
     .footertext
-    {display: block;}
+    {
+    display: flex;
+    padding: 0.5rem;
+    }
+
