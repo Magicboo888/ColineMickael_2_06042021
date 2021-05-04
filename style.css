@@ -9,10 +9,10 @@ body
 } 
 
 main
-{max-width: 1500px;
+{max-width: 2500px ;
 box-sizing: border-box ;
-padding: 0 2rem;
 margin: auto;
+padding: 2rem;
 }
 
 a
@@ -21,7 +21,7 @@ color: inherit;}
 
 header
 {box-sizing: border-box;
-max-width: 1500px;
+max-width: 2500px;
 display: flex;
 justify-content: space-between;
 margin: auto;}
@@ -51,12 +51,14 @@ margin: auto;}
     border-top: 2px solid#0065fc;
     padding-top: 40px;}
 
-.filtres
+.recherchefiltres
 {margin-bottom: 3rem;}
         .recherche
-        {display: flex;
+        {
+        display: flex;
         margin-bottom: 2rem;
-        height: 3rem;}
+        height: 3rem;
+        }
             .trouver
             {font-weight: 900;
             margin-bottom: 1rem;}
@@ -86,43 +88,88 @@ margin: auto;}
             font-size: 1rem;
             cursor: pointer;
             }
-            
-.filtres2
+                        
+.filtres
 {
-display: flex;
-font-weight: 600;
-font-size: 1rem; 
-}
-    .economique, .familial
-    {
     display: flex;
     margin-bottom: 2rem;
     height: 3rem;
+    align-items: center;
+}            
+.titrefiltres
+{
+display: flex;
+font-weight: 600;
+font-size: 1rem;
+}
+    .economique, .familial, .romantique, .animaux
+    {
+    display: flex;
+    height: 3rem;
+    margin: 1rem;
     }
     .icone2
     {
     display: flex;
-    background-color: #f2f2f2;
-    border-radius: 1rem 0 0 1rem;
+    background-color: #DEEBFF;
+    border-radius: 50%;
     width: 3rem;
+    }
+    .icone2 i
+    {
+    margin: auto;
+    color: #0065fc;    
     }
     .bouton2
     {
-    width: 7rem;
-    background-color: #0065fc;
-    border: none;
-    border-radius: 0 1rem 1rem 0;
-    color: #fff;
+    width: auto;
+    background-color: #fff;
+    border: 2px solid #a80e0e;
+    border-left: none;
+    border-radius: 1rem 1rem 1rem 1rem;
     font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
+    padding: 1rem ;
     }
-    
+    .info
+    {
+    display: flex;
+    align-items: center; 
+    }
+    .iconeinfo
+    {
+        height: 2rem;
+        display: flex;
+        width: 2rem;
+        border: 1px solid #f2f2f2;
+        border-radius: 100%;
+        margin-right: .5rem;
+        align-items: center;
+        justify-content: center;
+    }
+        .iconeinfo i
+        {
+            margin: auto;
+            color: #0065FC;  
+        }
+
 
 .logement
-{ box-sizing: border-box;
-
+{ 
+box-sizing: border-box;
 }
+    aside .hebergement, .pop
+    {
+    display: flex;
+    justify-content: space-around;    
+    }
+    .imghebergement
+    {
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    }
     .hebergement
     {box-sizing: border-box;
     
