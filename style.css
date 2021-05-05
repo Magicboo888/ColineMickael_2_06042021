@@ -1,34 +1,33 @@
 *
-{font-family: raleway;
-    
+{
+font-family: raleway;
 }
 
-body
-{box-sizing: border-box;
-    margin: auto;
-} 
-
 main
-{max-width: 2500px ;
+{
+max-width: 2500px ;
 box-sizing: border-box ;
 margin: auto;
-padding: 2rem;
+padding: 0 2rem;
 }
 
 a
-{text-decoration: none;
-color: inherit;}
+{
+text-decoration: none;
+color: inherit;
+}
 
 header
-{box-sizing: border-box;
-max-width: 2500px;
-display: flex;
+{
+display: flex;    
 justify-content: space-between;
-margin: auto;}
+margin: auto;
+}
 
     .logo
-    {padding: 3rem;
-    height: 4rem;
+    {
+    padding: 2rem 2rem 2rem 0rem  ;
+    height: 3rem;
     }
     .nav
     {
@@ -37,35 +36,43 @@ margin: auto;}
     font-weight: 600;
     align-items: center;
     }
-   .sinscrire
-   {color: #0065fc;
-    }
-
-    nav a
-    {display:flex;
-    padding: 2rem;
-    }
-
-    nav a:hover
-    {color: #0065fc;
-    border-top: 2px solid#0065fc;
-    padding-top: 40px;}
+        .sinscrire
+        {
+        color: #0065fc;
+        }
+        nav a
+        {
+        display:flex;
+        padding: 2rem;
+        }
+        nav a:hover
+        {
+        color: #0065fc;
+        border-top: 2px solid#0065fc;
+        padding-top: 2rem;
+        }
+        .liensnav
+        {
+        display: flex;
+        }
 
 .recherchefiltres
 {margin-bottom: 3rem;}
         .recherche
         {
         display: flex;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         height: 3rem;
         }
             .trouver
-            {font-weight: 900;
-            margin-bottom: 1rem;}
+            {
+            font-weight: 900;
+            }
             .enplein
             {margin-bottom: 1rem;}
             .icone
-            {display: flex;
+            {  
+            display: flex;
             background-color: #f2f2f2;
             border-radius: 1rem 0 0 1rem;
             width: 3rem;
@@ -77,7 +84,8 @@ margin: auto;}
             padding: 1rem;
             font-size: 1rem;
             font-weight: 600;
-            border: 1px solid #f2f2f2}
+            border: 1px solid #f2f2f2
+            }
             .bouton
             {width: 7rem;
             background-color: #0065fc;
@@ -88,65 +96,69 @@ margin: auto;}
             font-size: 1rem;
             cursor: pointer;
             }
-                        
+            
 .filtres
-{
-    display: flex;
-    margin-bottom: 2rem;
-    height: 3rem;
-    align-items: center;
+{display: flex;
+margin-top: .5rem;
+flex-wrap: wrap;
 }            
-.titrefiltres
-{
-display: flex;
-font-weight: 600;
-font-size: 1rem;
-}
-    .economique, .familial, .romantique, .animaux
-    {
-    display: flex;
-    height: 3rem;
-    margin: 1rem;
+    .titrefiltres
+    {display: flex;
+    margin: 0 2rem 1rem 0;
+    align-items: center;
     }
-    .icone2
-    {
-    display: flex;
-    background-color: #DEEBFF;
-    border-radius: 50%;
-    width: 3rem;
-    }
-    .icone2 i
-    {
-    margin: auto;
-    color: #0065fc;    
-    }
-    .bouton2
-    {
-    width: auto;
-    background-color: #fff;
-    border: 2px solid #a80e0e;
-    border-left: none;
-    border-radius: 1rem 1rem 1rem 1rem;
-    font-weight: 600;
-    font-size: 1rem;
-    cursor: pointer;
-    padding: 1rem ;
-    }
-    .info
-    {
-    display: flex;
-    align-items: center; 
-    }
-    .iconeinfo
-    {
-        height: 2rem;
+        .boutonfiltres
+        {
         display: flex;
-        width: 2rem;
-        border: 1px solid #f2f2f2;
+        align-items: center;
+        margin : 0 2rem 1rem 0;
+        border: 2px solid #d9d9d9;
+        border-radius: 2rem;
+        cursor: pointer;
+        font-weight: bold;
+        }
+        .boutonfiltres:hover
+        {
+        background-color: red;
+        }
+        .icone2
+        {
+        background-color: #DEEBFF;
         border-radius: 100%;
-        margin-right: .5rem;
+        height: 3rem;
+        width: 3rem;
+        min-height: 3.5rem;
+        min-width: 3.5rem;
+        display: flex;
         align-items: center;
         justify-content: center;
+        margin: -2px;
+        }
+        .icone2 i
+        {
+        margin: auto;
+        color: #0065fc;    
+        }
+        .titrebouton
+        {
+        margin: 0 1rem;
+        }
+    
+.info
+{
+display: flex;
+align-items: center; 
+}
+    .iconeinfo
+    {
+    height: 2rem;
+    display: flex;
+    width: 2rem;
+    border: 1px solid #f2f2f2;
+    border-radius: 100%;
+    margin-right: .5rem; 
+    align-items: center;
+    justify-content: center;
     }
         .iconeinfo i
         {
@@ -154,66 +166,125 @@ font-size: 1rem;
             color: #0065FC;  
         }
 
-
-.logement
+#logement
 { 
-box-sizing: border-box;
+display: grid;
+column-gap: 2rem;
+grid-template-columns: 6fr 3fr;
 }
-    aside .hebergement, .pop
-    {
-    display: flex;
-    justify-content: space-around;    
-    }
-    .imghebergement
-    {
-    display: flex;
-    object-fit: cover;
-    width: 100%;
-    }
     .hebergement
-    {box-sizing: border-box;
-    
-    border-radius: 1rem;
-    background-color: #f2f2f2;
-    width: 70%;}
-        .hbgmarseille
-        {font-weight: bold;}
-        .etoilebleu
+    {
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    }
+        .blocimgarticle
         {
-        color: #0065fc;}
-        .etoilegrise
-        {color: #f2f2f2;}
-        .blocimg
-        {margin: 2rem;
-        padding: auto;
+        background-color: white;
+        padding: .4rem;
+        border-radius: 1rem;
+        box-shadow: 0 0 16px #0000002e;
+        transition-duration: 0.1s;
+        cursor: pointer;
+        box-sizing: border-box;
+        height: 100%;
         }
+        .blocimgarticle:hover
+        {
+        transform: skew(10deg);    
+        }
+            .blocimgindiv
+            {
+            margin: auto;
+            }
+            .imghebergement
+            {
+            height: 7rem;
+            object-fit: cover ; 
+            max-width: 100%;
+            width: 100%;
+            max-height: 100%;
+            border-radius: 1rem 1rem 0 0;
+            }
+                .titrehebergement
+                {
+                font-weight: bold ;
+                }
+                .titrehebergement, .texthebergement, .etoile
+                {
+                margin: .5rem 1rem 0 1rem;
+                }
+                .etoilebleu
+                {
+                color: #0065fc;
+                }
+                .etoilegrise
+                {   
+                color: #f2f2f2;
+                }
         
-
     .pop
-    {box-sizing: border-box;
-    border-radius: 1rem;
-    background-color: #f2f2f2;
-    width: 30%;
+    {
+    display: grid;
+    row-gap: 2rem;
+    align-items: start;
+    grid-template-rows: auto repeat(3, 1fr);
     }
         .lespluspop
         {
         display: flex;
-        font-weight: bold
+        justify-content: space-between;
         }
-   
-.acmarseille
+            .blocimgpop
+            {
+            background-color: white;
+            padding: 0.375rem;
+            border-radius: 1.25rem;
+            box-shadow: 0 0 16px #0000002e;
+            transition-duration: 0.1s;
+            cursor: pointer;
+            box-sizing: border-box;
+            height: 100%;
+            }
+                .lienpop
+                {
+                display: flex;
+                align-items: stretch;
+                height: 100%;
+                overflow: auto;  
+                }
+                .contourimg
+                {
+                position: relative;
+                min-height: 100%;
+                width: 33%;
+                min-width: 33%;
+                max-width: 33%;
+                }
+                .imgpop
+                {
+                border-radius: 1rem 0 0 1rem;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                }   
+                    .partietext
+                    {
+                    display: flex;
+                    flex-direction: column;
+                    }
+                    .titrepop, .textpop, .etoilepop
+                    {
+                    margin: .5rem 1rem 0 1rem; 
+                    }
+
+.hebergement, .pop
 {
-font-weight: bold;
-margin: 2rem 2rem;
-}  
-    .grande
-    {
-    display: flex;
-    }
-    .petite
-    {
-    display: flex;
-    }
+background-color: #F2F2F2;
+border-radius: 1.5rem;
+padding: 2rem;
+}
 
 footer
 {
