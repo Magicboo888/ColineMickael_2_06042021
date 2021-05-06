@@ -246,6 +246,10 @@ grid-template-columns: 6fr 3fr;
             box-sizing: border-box;
             height: 100%;
             }
+            .blocimgpop:hover
+            {
+            transform: skew(10deg);    
+            }
                 .lienpop
                 {
                 display: flex;
@@ -286,6 +290,41 @@ border-radius: 1.5rem;
 padding: 2rem;
 }
 
+#activite
+{
+display: grid;
+column-gap: 2rem;
+margin: 4rem 0;
+}
+    .lienactivite
+    {
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    }
+    .lienactivite:hover
+    {
+    transform: skew(10deg);    
+    }
+        .blocimgactivite
+        {
+        position: relative;
+        flex: 1;
+        }
+        .imgactivite
+        {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        }
+        .textactivite
+        {
+        margin: 1rem;
+        }        
+        
 footer
 {
 display: flex;
