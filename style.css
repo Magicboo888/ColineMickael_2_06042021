@@ -34,7 +34,7 @@ margin: auto;
     display: flex;
     padding: 2rem;
     font-weight: 600;
-    align-items: center;
+    align-items:end;
     }
         .sinscrire
         {
@@ -162,8 +162,8 @@ align-items: center;
     }
         .iconeinfo i
         {
-            margin: auto;
-            color: #0065FC;  
+        margin: auto;
+        color: #0065FC;  
         }
 
 #logement
@@ -177,7 +177,22 @@ grid-template-columns: 6fr 3fr;
     display: grid;
     column-gap: 2rem;
     row-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
     }
+<<<<<<< Updated upstream
+        .headerhebergement
+        {
+        grid-column: 1/-1; 
+        }
+=======
+<<<<<<< Updated upstream
+=======
+        .headerhebergement
+        {
+        
+        }
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
         .blocimgarticle
         {
         background-color: white;
@@ -191,7 +206,7 @@ grid-template-columns: 6fr 3fr;
         }
         .blocimgarticle:hover
         {
-        transform: skew(10deg);    
+        transform: scale(1.05);    
         }
             .blocimgindiv
             {
@@ -248,7 +263,7 @@ grid-template-columns: 6fr 3fr;
             }
             .blocimgpop:hover
             {
-            transform: skew(10deg);    
+            transform: scale(1.05);    
             }
                 .lienpop
                 {
@@ -292,39 +307,101 @@ padding: 2rem;
 
 #activite
 {
+<<<<<<< Updated upstream
+display: flex;
+flex-wrap: wrap;
+=======
+<<<<<<< Updated upstream
 display: grid;
 column-gap: 2rem;
+>>>>>>> Stashed changes
 margin: 4rem 0;
+box-sizing: border-box;
+height: 500px;
 }
+.test
+{
+display: flex;    
+}
+.test>*
+{
+margin: 0 1rem;
+flex: 1;
+flex-wrap: wrap;
+box-sizing: border-box;
+}
+
     .lienactivite
     {
+        display: flex;
     box-shadow: 0 0 20px #0000002e;
     border-radius: 1rem;
+<<<<<<< Updated upstream
+    flex-flow: column wrap;
+=======
     overflow: hidden;
     display: flex;
     flex-direction: column;
+=======
+display: flex;
+flex-wrap: wrap;
+height: 100%;
+width: 100%;
+object-fit: cover;
+margin: 4rem 0;
+box-sizing: border-box;
+}
+    .blocactivite
+    {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1rem ;    
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     }
+        .lienactivite
+        {
+        object-fit: cover;    
+        margin : 0 0 2 0;   
+        height: 100%;  
+        width: 100%;
+        box-shadow: 0 0 20px #0000002e;
+        border-radius: 1rem;
+        flex-flow: column wrap;
+        }
     .lienactivite:hover
     {
-    transform: skew(10deg);    
+    transform: scale(1.05);    
+    }
+    .lienactivite1
+    {
+        
+    }
+    .lienactivite2, .lienactivite5
+    {
+
+    }
+    .lienactivite3
+    {
+    
+    }
+    .lienactivite6, .lienactivite4
+    {
+     
     }
         .blocimgactivite
         {
-        position: relative;
-        flex: 1;
+         
         }
         .imgactivite
         {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+       
         }
         .textactivite
         {
         margin: 1rem;
-        }        
-        
+        } 
+            
 footer
 {
 display: flex;
@@ -345,6 +422,4 @@ justify-content: space-around;
     .footertext
     {
     display: flex;
-    padding: 0.5rem;
-    }
-
+    padding: 0.5rem;}
