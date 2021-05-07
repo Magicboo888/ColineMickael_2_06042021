@@ -177,7 +177,12 @@ grid-template-columns: 6fr 3fr;
     display: grid;
     column-gap: 2rem;
     row-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
     }
+        .headerhebergement
+        {
+        grid-column: 1/-1; 
+        }
         .blocimgarticle
         {
         background-color: white;
@@ -191,7 +196,7 @@ grid-template-columns: 6fr 3fr;
         }
         .blocimgarticle:hover
         {
-        transform: skew(10deg);    
+        transform: scale(1.05);    
         }
             .blocimgindiv
             {
@@ -248,7 +253,7 @@ grid-template-columns: 6fr 3fr;
             }
             .blocimgpop:hover
             {
-            transform: skew(10deg);    
+            transform: scale(1.05);    
             }
                 .lienpop
                 {
@@ -292,39 +297,64 @@ padding: 2rem;
 
 #activite
 {
-display: grid;
-column-gap: 2rem;
+display: flex;
+flex-wrap: wrap;
 margin: 4rem 0;
+box-sizing: border-box;
+height: 500px;
 }
+.test
+{
+display: flex;    
+}
+.test>*
+{
+margin: 0 1rem;
+flex: 1;
+flex-wrap: wrap;
+box-sizing: border-box;
+}
+
     .lienactivite
     {
+        display: flex;
     box-shadow: 0 0 20px #0000002e;
     border-radius: 1rem;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     }
     .lienactivite:hover
     {
-    transform: skew(10deg);    
+    transform: scale(1.05);    
+    }
+    .lienactivite1
+    {
+        
+    }
+    .lienactivite2, .lienactivite5
+    {
+
+    }
+    .lienactivite3
+    {
+    
+    }
+    .lienactivite6, .lienactivite4
+    {
+     
     }
         .blocimgactivite
         {
-        position: relative;
-        flex: 1;
+         
         }
         .imgactivite
         {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+       
         }
         .textactivite
         {
         margin: 1rem;
-        }        
-        
+        } 
+            
 footer
 {
 display: flex;
@@ -345,6 +375,4 @@ justify-content: space-around;
     .footertext
     {
     display: flex;
-    padding: 0.5rem;
-    }
-
+    padding: 0.5rem;}
