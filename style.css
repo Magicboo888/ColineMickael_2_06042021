@@ -1,8 +1,15 @@
 *
 {
 font-family: raleway;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
 }
 
+body
+{
+height: 100vh;
+}
 main
 {
 max-width: 2500px ;
@@ -21,6 +28,7 @@ header
 {
 display: flex;    
 justify-content: space-between;
+max-width: 2500px;
 margin: auto;
 }
 
@@ -31,10 +39,8 @@ margin: auto;
     }
     .nav
     {
-    display: flex;
     padding: 2rem;
     font-weight: 600;
-    align-items:end;
     }
         .sinscrire
         {
@@ -174,25 +180,11 @@ grid-template-columns: 6fr 3fr;
 }
     .hebergement
     {
-    display: grid;
-    column-gap: 2rem;
-    row-gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
+        display: grid;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
     }
-<<<<<<< Updated upstream
-        .headerhebergement
-        {
-        grid-column: 1/-1; 
-        }
-=======
-<<<<<<< Updated upstream
-=======
-        .headerhebergement
-        {
-        
-        }
->>>>>>> Stashed changes
->>>>>>> Stashed changes
         .blocimgarticle
         {
         background-color: white;
@@ -277,7 +269,6 @@ grid-template-columns: 6fr 3fr;
                 position: relative;
                 min-height: 100%;
                 width: 33%;
-                min-width: 33%;
                 max-width: 33%;
                 }
                 .imgpop
@@ -307,100 +298,58 @@ padding: 2rem;
 
 #activite
 {
-<<<<<<< Updated upstream
-display: flex;
-flex-wrap: wrap;
-=======
-<<<<<<< Updated upstream
-display: grid;
-column-gap: 2rem;
->>>>>>> Stashed changes
-margin: 4rem 0;
-box-sizing: border-box;
-height: 500px;
-}
-.test
-{
-display: flex;    
-}
-.test>*
-{
-margin: 0 1rem;
-flex: 1;
-flex-wrap: wrap;
-box-sizing: border-box;
+margin: 2rem 0;
 }
 
-    .lienactivite
-    {
-        display: flex;
-    box-shadow: 0 0 20px #0000002e;
-    border-radius: 1rem;
-<<<<<<< Updated upstream
-    flex-flow: column wrap;
-=======
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-=======
-display: flex;
-flex-wrap: wrap;
-height: 100%;
-width: 100%;
-object-fit: cover;
-margin: 4rem 0;
-box-sizing: border-box;
-}
     .blocactivite
     {
     display: flex;
-    flex-flow: row wrap;
-    padding: 1rem ;    
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+    max-width: 2500px;
+    width: 100%;
+    flex-wrap: wrap;    
     }
         .lienactivite
-        {
-        object-fit: cover;    
-        margin : 0 0 2 0;   
-        height: 100%;  
-        width: 100%;
+        {       overflow: hidden;
         box-shadow: 0 0 20px #0000002e;
         border-radius: 1rem;
-        flex-flow: column wrap;
+        margin: 2rem 0;
         }
-    .lienactivite:hover
-    {
-    transform: scale(1.05);    
-    }
-    .lienactivite1
-    {
-        
-    }
-    .lienactivite2, .lienactivite5
-    {
-
-    }
-    .lienactivite3
-    {
-    
-    }
-    .lienactivite6, .lienactivite4
-    {
-     
-    }
-        .blocimgactivite
+        .lienactivite:hover
         {
-         
+        transform: scale(1.05);    
         }
-        .imgactivite
+    .imgactivite
+    {
+        width: 100%;
+        height: 83%;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+        .grande
         {
-       
+        height: 30rem;
+        width: 16.5rem;
         }
-        .textactivite
+        .moyenne
         {
-        margin: 1rem;
-        } 
+        margin-left: 2rem;
+        height: 16rem;
+        width: 16.5rem;
+        }
+        .petite
+        {   
+        margin-left: 2rem;
+        height: 12rem;
+        width: 16.5rem;
+        }
+        .parcnational
+        {
+        margin-left: 2rem;
+        }
+    .textactivite
+    {
+    margin: .5rem;
+    } 
             
 footer
 {
