@@ -9,10 +9,11 @@ padding: 0;
 body
 {
 height: 100vh;
+box-sizing: border-box;
 }
 main
 {
-max-width: 2500px ;
+max-width: 1500px ;
 box-sizing: border-box ;
 margin: auto;
 padding: 0 2rem;
@@ -28,8 +29,6 @@ header
 {
 display: flex;    
 justify-content: space-between;
-max-width: 2500px;
-margin: auto;
 }
 
     .logo
@@ -39,7 +38,7 @@ margin: auto;
     }
     .nav
     {
-    padding: 2rem;
+        padding: 2rem;
     font-weight: 600;
     }
         .sinscrire
@@ -102,6 +101,20 @@ margin: auto;
             font-size: 1rem;
             cursor: pointer;
             }
+            /* version portable */
+                @media (max-width: 600px) 
+                {
+                    .recherche {
+                    display: flex;
+                    width: 100%;
+                    }
+                    .champ {
+                    flex: 1;
+                    }
+                    .bouton {
+                    display: none;
+                    }
+                }
             
 .filtres
 {display: flex;
@@ -171,6 +184,17 @@ align-items: center;
         margin: auto;
         color: #0065FC;  
         }
+
+     
+          @media (max-width: 600px) {
+            .titrebouton {
+              width: 100%;
+            }
+            .boutonfiltres {
+              margin-right: 1rem;
+            }
+          }
+            
 
 #logement
 { 
@@ -304,7 +328,7 @@ margin: 2rem 0;
     .blocactivite
     {
     display: flex;
-    max-width: 2500px;
+    max-width: 1500px;
     width: 100%;
     flex-wrap: wrap;    
     }
@@ -325,22 +349,30 @@ margin: 2rem 0;
         object-fit: cover;
         flex-shrink: 0;
     }
+
+    .imgactivite2
+    {
+    width: 100%; 
+    height: 70%;
+    object-fit: cover;
+    flex-shrink: 0;       
+    }
         .grande
         {
         height: 30rem;
-        width: 16.5rem;
+        width: 20.7rem;
         }
         .moyenne
         {
         margin-left: 2rem;
         height: 16rem;
-        width: 16.5rem;
+        width: 20.7rem;
         }
         .petite
         {   
         margin-left: 2rem;
         height: 12rem;
-        width: 16.5rem;
+        width: 20.7rem;
         }
         .parcnational
         {
@@ -348,7 +380,7 @@ margin: 2rem 0;
         }
     .textactivite
     {
-    margin: .5rem;
+    margin: 1rem;
     } 
             
 footer
