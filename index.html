@@ -72,12 +72,14 @@
             <!--hébergements-->
         <section class="logement" id="logement">
             <div class="hebergement">
-               <h2 class=hbgmarseille>Hébergements à Marseille</h2>         
+                <header class=headerhbg>
+                    <h2 class=hbgmarseille>Hébergements à Marseille</h2>
+                </header>             
                <article class="blocimgarticle">
                     <a href="#">
                         <figure class="blocimgindiv">
                             <img class="imghebergement" src="images/hebergements/4_small/cannebiere.jpg" alt="Auberge la Cannebière">
-                            <figcaption class="titrehebergement">Auberge La Cannebière</figcaption>
+                            <figcaption class="titrehebergement"><h3>Auberge La Cannebière</h3></figcaption>
                         </figure>    
                             <div class="texthebergement">Nuit à partir de <strong>25€</strong></div>       
                             <div class="etoile">
@@ -93,7 +95,7 @@
                     <a href="#">     
                         <figure class="blocimgindiv">
                             <img class="imghebergement" src="images/hebergements/4_small/port.jpg" alt="Hôtel du port">
-                            <figcaption class="titrehebergement">Hôtel du port</figcaption>
+                            <figcaption class="titrehebergement"><h3>Hôtel du port</h3></figcaption>
                         </figure>     
                             <div class="texthebergement">Nuit à partir de <strong>52€</strong></div>
                             <div class="etoile">
@@ -109,7 +111,7 @@
                     <a href="#">
                         <figure class="blocimgindiv">    
                             <img class="imghebergement" src="images/hebergements/4_small/mouettes.jpg" alt="Hôtel les mouettes">
-                            <figcaption class="titrehebergement">Hôtel Les mouettes</figcaption>
+                            <figcaption class="titrehebergement"><h3>Hôtel Les mouettes</h3></figcaption>
                         </figure> 
                             <div class="texthebergement">Nuit à partir de <strong>76€</strong></div>                
                             <div class="etoile">
@@ -125,9 +127,9 @@
                     <a href="#">
                         <figure class="blocimgindiv">    
                             <img class="imghebergement" src="images/hebergements/4_small/lamer.jpg" alt="Hôtel de la mer">
-                            <figcaption class="titrehebergement">Hôtel de la mer</figcaption>
+                            <figcaption class="titrehebergement"><h3>Hôtel de la mer</h3></figcaption>
                         </figure>    
-                            <div class="texthebergement">Nuit à partir de<strong>46€</strong></div>
+                            <div class="texthebergement">Nuit à partir de <strong>46€</strong></div>
                             <div class="etoile">
                                 <i class="fas fa-star etoilebleu"></i>
                                 <i class="fas fa-star etoilebleu"></i>
@@ -141,7 +143,7 @@
                     <a href="#">
                         <figure class="blocimgindiv">        
                             <img class="imghebergement" src="images/hebergements/4_small/lepanier.jpg" alt="Auberge Le Panier">
-                            <figcaption class="titrehebergement">Auberge le Panier</figcaption>
+                            <figcaption class="titrehebergement"><h3>Auberge le Panier</h3></figcaption>
                         </figure>     
                             <div class="texthebergement">Nuit à partir de <strong>46€</strong></div>
                             <div class="etoile"> 
@@ -157,7 +159,7 @@
                     <a href="#">
                         <figure class="blocimgindiv">                                
                             <img class="imghebergement" src="images/hebergements/4_small/amina.jpg" alt="Hôtel chez Amina">
-                            <figcaption class="titrehebergement">Hôtel chez Amina</figcaption>
+                            <figcaption class="titrehebergement"><h3>Hôtel chez Amina</h3></figcaption>
                         </figure>     
                             <div class="texthebergement">Nuit à partir de <strong>96€</strong></div>
                             <div class="etoile">
@@ -169,7 +171,7 @@
                             </div>
                     </a>
                 </article>    
-                <a href="#"><strong>Afficher plus</strong></a>
+                <a class="afficherplus" href="#">Afficher plus</a>
             </div>
                 <!--les plus populaires-->     
             <aside class="pop">
@@ -182,6 +184,7 @@
                             <div class="partietext">
                             <h3 class="titrepop">Hôtel Le soleil du matin</h3>
                             <div class="textpop">Nuit à partir de<strong>128€</strong></div>
+                            <div class="espace"></div>
                             <div class="etoilepop">
                                 <i class="fas fa-star etoilebleu"></i>
                                 <i class="fas fa-star etoilebleu"></i>
@@ -199,6 +202,7 @@
                         <div class="partietext">
                             <h3 class="titrepop">Au cœur de l'eau Chambres d'hôtes</h3>    
                             <div class="textpop">Nuit à partir de <strong>71€</strong></div>
+                            <div class="espace"></div>
                             <div class="etoile">
                                 <i class="fas fa-star etoilebleu"></i>
                                 <i class="fas fa-star etoilebleu"></i>
@@ -217,6 +221,7 @@
                         <div class="partietext">
                             <h3 class="titrepop">Hôtel Tout bleu et blanc</h3>    
                             <div class="textpop">Nuit à partir de <strong>68€</strong></div>
+                            <div class="espace"></div>
                             <div class="etoile">
                                 <i class="fas fa-star etoilebleu"></i>
                                 <i class="fas fa-star etoilebleu"></i>
@@ -233,43 +238,43 @@
         <section id="activite">
             <h2 class="acmarseille">Activités à Marseille</h2>
                 <div class="blocactivite"> 
-                    <div class="solo lienactivite grande">
+                    <div class="colonne lienactivite grande">
                         <a href="#" >
                             <img class="imgactivite" src="images/activites/4_small/port.jpg" alt="Vieux port">
-                            <h2 class="textactivite">Vieux port</h2>        
+                            <h3 class="textactivite">Vieux port</h3>        
                         </a>
                     </div>
-                    <div class="duo">
+                    <div class="colonne">
                         <div class="lienactivite moyenne">
                             <a href="#">    
-                                <img class="imgactivite2" src="images/activites/4_small/fort.jpg" alt="Fort de Pomègues">
-                                <h2 class="textactivite">Fort de Pomègues</h2>
+                                <img class="imgactivite" src="images/activites/4_small/fort.jpg" alt="Fort de Pomègues">
+                                <div class="textactivite"><h3>Fort de Pomègues</h3></div>
                             </a> 
                         </div>  
                         <div class="lienactivite petite">  
                             <a href="#"> 
-                                <img class="imgactivite2" src="images/activites/4_small/ile.jpg" alt="Iles du Fioul">
-                                <h2 class="textactivite">Iles du Fioul</h2>
+                                <img class="imgactivite" src="images/activites/4_small/ile.jpg" alt="Iles du Fioul">
+                                <div class="textactivite"><h3>Iles du Fioul</h3></div>
                             </a>    
                         </div>
                     </div>
-                    <div class="solo lienactivite grande parcnational">
+                    <div class="colonne lienactivite grande parcnational">
                         <a href="#">
                             <img class="imgactivite" src="images/activites/4_small/parc2.jpg" alt="Parc National des Calanques">
-                            <h2 class="textactivite">Parc National des Calanques</h2>
+                            <div class="textactivite"><h3>Parc National des Calanques</h3></div>
                         </a>
                     </div>
-                    <div class="duo">
+                    <div class="colonne">
                         <div class="lienactivite petite">
                             <a href="#">
-                                <img class="imgactivite2" src="images/activites/4_small/notredame.jpg" alt="Notre Dame de la Garde">
-                                <h2 class="textactivite">Notre-Dame-de-la-Garde</h2>
+                                <img class="imgactivite" src="images/activites/4_small/notredame.jpg" alt="Notre Dame de la Garde">
+                                <div class="textactivite"><h3>Notre-Dame-de-la-Garde</h3></div>
                             </a>
                         </div>
                         <div class="lienactivite moyenne">
                             <a href="#">    
-                                <img class="imgactivite2" src="images/activites/4_small/parc1.jpg" alt="Parc Longchamp">
-                                <h2 class="textactivite">Parc Longchamp</h2>
+                                <img class="imgactivite" src="images/activites/4_small/parc1.jpg" alt="Parc Longchamp">
+                                <div class="textactivite"><h3>Parc Longchamp</h3></div>
                             </a>  
                         </div>    
                     </div>            
