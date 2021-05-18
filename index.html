@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<link rel="stylesheet" href="style.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/1c1d27c4b3.js" crossorigin="anonymous"></script>
         <title>Projet2 reservia</title>
     </head>
@@ -14,8 +15,8 @@
             <div class="blocheader">
                 <img class="logo" src="images/logo/reservia.png" alt="logo reservia">
                 <nav class="liensnav">
-                    <a href="#logement">Hébergements</a> 
-                    <a href="#activite">Activités</a> 
+                    <a class="stylehbg" href="#logement">Hébergements</a> 
+                    <a class="styleact" href="#activite">Activités</a> 
                     <a href="#" class="sinscrire">S'inscrire</a>
                 </nav> 
             </div>    
@@ -35,6 +36,7 @@
                 <button class="bouton">
                     <span class="textbouton">Rechercher</span>
                     <i class="loupe fas fa-search"></i>
+                </button>
             </div>  
                 <!--filtres-->
             <div class="filtres">
@@ -78,7 +80,7 @@
                 <header class=headerhbg>
                     <h2 class=hbgmarseille>Hébergements à Marseille</h2>
                 </header>             
-               <article class="blocimgarticle">
+               <div class="blocimgarticle">
                     <a href="#">
                         <figure class="blocimgindiv">
                             <img class="imghebergement" src="images/hebergements/4_small/cannebiere.jpg" alt="Auberge la Cannebière">
@@ -93,8 +95,8 @@
                                 <i class="fas fa-star etoilegrise"></i>
                             </div>
                     </a>
-                </article>
-                <article class="blocimgarticle">
+                </div>
+                <div class="blocimgarticle">
                     <a href="#">     
                         <figure class="blocimgindiv">
                             <img class="imghebergement" src="images/hebergements/4_small/port.jpg" alt="Hôtel du port">
@@ -109,8 +111,8 @@
                                 <i class="fas fa-star etoilebleu"></i>
                             </div>   
                     </a>
-                </article>
-                <article class="blocimgarticle">    
+                </div>
+                <div class="blocimgarticle">    
                     <a href="#">
                         <figure class="blocimgindiv">    
                             <img class="imghebergement" src="images/hebergements/4_small/mouettes.jpg" alt="Hôtel les mouettes">
@@ -125,8 +127,8 @@
                                 <i class="fas fa-star etoilegrise"></i>
                             </div>
                     </a>
-                </article>
-                <article class="blocimgarticle">        
+                </div>
+                <div class="blocimgarticle">        
                     <a href="#">
                         <figure class="blocimgindiv">    
                             <img class="imghebergement" src="images/hebergements/4_small/lamer.jpg" alt="Hôtel de la mer">
@@ -141,8 +143,8 @@
                                 <i class="fas fa-star etoilegrise"></i>        
                             </div>
                     </a>
-                </article>
-                <article class="blocimgarticle">    
+                </div>
+                <div class="blocimgarticle">    
                     <a href="#">
                         <figure class="blocimgindiv">        
                             <img class="imghebergement" src="images/hebergements/4_small/lepanier.jpg" alt="Auberge Le Panier">
@@ -157,8 +159,8 @@
                                 <i class="fas fa-star etoilegrise"></i>
                             </div>
                     </a>
-                </article>
-                <article class="blocimgarticle">    
+                </div>
+                <div class="blocimgarticle">    
                     <a href="#">
                         <figure class="blocimgindiv">                                
                             <img class="imghebergement" src="images/hebergements/4_small/amina.jpg" alt="Hôtel chez Amina">
@@ -173,7 +175,7 @@
                                 <i class="fas fa-star etoilebleu"></i>
                             </div>
                     </a>
-                </article>    
+                </div>    
                 <a class="afficherplus" href="#">Afficher plus</a>
             </div>
                 <!--les plus populaires-->     
@@ -188,7 +190,7 @@
                             <h3 class="titrepop">Hôtel Le soleil du matin</h3>
                             <div class="textpop">Nuit à partir de <strong>128€</strong></div>
                             <div class="espace"></div>
-                            <div class="etoilepop">
+                            <div class="etoile">
                                 <i class="fas fa-star etoilebleu"></i>
                                 <i class="fas fa-star etoilebleu"></i>
                                 <i class="fas fa-star etoilebleu"></i>
@@ -240,46 +242,50 @@
             <!--les activités à Marseille-->
         <section id="activite">
             <h2 class="acmarseille">Activités à Marseille</h2>
-                <div class="blocactivite"> 
-                    <div class="colonne lienactivite grande">
+                <div class="blocactivite">
+                    <div class="colonne"> 
                         <a href="#" >
-                            <img class="imgactivite" src="images/activites/4_small/port.jpg" alt="Vieux port">
-                            <h3 class="textactivite">Vieux port</h3>        
+                            <div class="lienactivite">
+                                <div class="grande"><img class="imgactivite" src="images/activites/4_small/port.jpg" alt="Vieux port"></div>
+                                <div class="textactivite"><h3>Vieux port</h3></div>        
+                            </div>
                         </a>
                     </div>
                     <div class="colonne">
-                        <div class="lienactivite moyenne">
-                            <a href="#">    
-                                <img class="imgactivite" src="images/activites/4_small/fort.jpg" alt="Fort de Pomègues">
+                        <a href="#">    
+                            <div class="lienactivite marginhbg">
+                                <div class="moyenne"><img class="imgactivite" src="images/activites/4_small/fort.jpg" alt="Fort de Pomègues"></div>
                                 <div class="textactivite"><h3>Fort de Pomègues</h3></div>
-                            </a> 
-                        </div>  
-                        <div class="lienactivite petite">  
-                            <a href="#"> 
-                                <img class="imgactivite" src="images/activites/4_small/ile.jpg" alt="Iles du Fioul">
+                            </div> 
+                        </a> 
+                        <a href="#"> 
+                            <div class="lienactivite marginhbg">  
+                                <div class="petite"><img class="imgactivite" src="images/activites/4_small/ile.jpg" alt="Iles du Fioul"></div>
                                 <div class="textactivite"><h3>Iles du Fioul</h3></div>
-                            </a>    
-                        </div>
+                            </div>
+                        </a>    
                     </div>
-                    <div class="colonne lienactivite grande parcnational">
+                    <div class="colonne">
                         <a href="#">
-                            <img class="imgactivite" src="images/activites/4_small/parc2.jpg" alt="Parc National des Calanques">
-                            <div class="textactivite"><h3>Parc National des Calanques</h3></div>
+                            <div class="lienactivite marginhbg">
+                                <div class="grande"><img class="imgactivite" src="images/activites/4_small/parc2.jpg" alt="Parc National des Calanques"></div>
+                                <div class="textactivite"><h3>Parc National des Calanques</h3></div>
+                            </div>
                         </a>
                     </div>
                     <div class="colonne">
-                        <div class="lienactivite petite">
-                            <a href="#">
-                                <img class="imgactivite" src="images/activites/4_small/notredame.jpg" alt="Notre Dame de la Garde">
+                        <a href="#">
+                            <div class="lienactivite marginhbg">
+                                <div class="petite"><img class="imgactivite" src="images/activites/4_small/notredame.jpg" alt="Notre Dame de la Garde"></div>
                                 <div class="textactivite"><h3>Notre-Dame-de-la-Garde</h3></div>
-                            </a>
-                        </div>
-                        <div class="lienactivite moyenne">
-                            <a href="#">    
-                                <img class="imgactivite" src="images/activites/4_small/parc1.jpg" alt="Parc Longchamp">
+                            </div>
+                        </a>    
+                        <a href="#">    
+                            <div class="lienactivite marginhbg">
+                                <div class="moyenne"><img class="imgactivite" src="images/activites/4_small/parc1.jpg" alt="Parc Longchamp"></div>
                                 <div class="textactivite"><h3>Parc Longchamp</h3></div>
-                            </a>  
-                        </div>    
+                            </div>    
+                        </a>  
                     </div>            
                 </div>
             </section>
