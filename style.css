@@ -450,7 +450,7 @@ margin: 3rem 0;
     .imgactivite
     {
     width: 100%;
-    height:100%;
+    height: 100%;
     object-fit: cover;
     flex-shrink: 0;
     }
@@ -458,19 +458,19 @@ margin: 3rem 0;
     .colonne
     {
     width: 25%;
+    
     }
         .grande
         {
-        height: 32.2rem;
+        height: 26rem;
         }
         .moyenne
         {
-
-        height: 16rem
+        height: 11rem
         }
         .petite
         {   
-        height: 10rem;
+        height: 9rem;
         }
         .marginhbg
         {
