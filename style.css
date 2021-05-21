@@ -15,6 +15,12 @@ margin: auto;
 padding: 0 6rem;
 }
 
+ @media (max-width: 1050px){
+ main {
+ padding: 0 1rem;  
+ }
+ }
+
 a
 {
 text-decoration: none;
@@ -87,22 +93,21 @@ width: 100%;
             display: flex;
             }
             .logo {
-            margin-left: 1.5rem;  
+            margin-left: .3rem;  
             }
-          
             .styleact, .stylehbg {
               padding-top: 1.5rem;
               border-top: none;
               border-bottom: 3px solid #F2F2F2;
               width: 50%;
               text-align: center;
-          }
+            }
             .stylehbg {
               border-bottom: 3px solid #0065fc !important;
             }
             header span {
             order: 1;
-            margin-right: 1.5rem;
+            margin-right: .3rem;
             padding: 0 !important;
             }
             .logo {
