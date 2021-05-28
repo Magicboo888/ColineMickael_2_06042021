@@ -220,7 +220,7 @@ header span:hover {
   color: #0065fc;
 }
 .titrebouton {
-  margin: 0 1rem;
+  margin: 0 .5rem;
 }
 
 .info {
@@ -353,6 +353,7 @@ header span:hover {
 }
 .partietext {
   display: flex;
+  width: 70%;
   flex-direction: column;
 }
 .espace {
@@ -361,7 +362,7 @@ header span:hover {
 .titrepop,
 .textpop,
 .etoilepop {
-  margin: 0.5rem 1rem 0 1rem;
+  margin: .5rem 1rem 0 1rem;
 }
 
 .hebergement,
