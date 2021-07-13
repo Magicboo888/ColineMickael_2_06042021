@@ -1,4 +1,4 @@
-Premier projet de la formation développeur web avec Openclassrooms. Le but était d'intégrer la maquette du designer en condition de travail mais sans utiliser de framworks. Uniquement avec HTML et CSS et seulement la partie front. La page devait bien sûr être responsive. 
+Premier projet technique de la formation développeur web avec Openclassrooms. Le but était d'intégrer la maquette du designer en condition de travail mais sans utiliser de framworks. Uniquement avec HTML et CSS et seulement la partie front. La page devait bien sûr être responsive. 
 
 Voici les maquettes:
 
